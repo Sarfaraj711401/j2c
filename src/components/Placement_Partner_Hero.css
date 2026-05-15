@@ -1,0 +1,61 @@
+.j2c-hero {
+    width: 100%;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+    padding: 120px 20px 60px; /* ✅ Reduced */
+    text-align: center;
+    overflow: hidden;
+}
+
+/* TITLE */
+.j2c-hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 6vw, 3.8rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* HIGHLIGHT */
+.j2c-hero-title span {
+    color: #fde047;
+}
+
+/* TEXT */
+.j2c-hero-text {
+    max-width: 800px;
+    margin: 20px auto 0;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .j2c-hero {
+        padding: 150px 15px 70px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .j2c-hero {
+        padding: 130px 15px 60px;
+    }
+
+    .j2c-hero-text {
+        font-size: 1rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .j2c-hero {
+        padding: 110px 10px 50px;
+    }
+
+    .j2c-hero-title {
+        font-size: 2rem;
+    }
+}

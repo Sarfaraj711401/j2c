@@ -1,0 +1,98 @@
+/* ===== ROOT ===== */
+.campus-who {
+  background: #ffffff;
+  padding: 60px 20px;
+}
+
+/* CONTAINER */
+.campus-who__container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+/* TITLE */
+.campus-who__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #111827;
+}
+
+/* GRID */
+.campus-who__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+/* CARD */
+.campus-who__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.campus-who__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ICON */
+.campus-who__icon {
+  width: 48px;
+  height: 48px;
+  background: #dcfce7;
+  color: #16a34a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* TEXT */
+.campus-who__card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.campus-who__card p {
+  font-size: 14px;
+  color: #6b7280;
+  max-width: 250px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (min-width: 768px) {
+  .campus-who__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .campus-who__title {
+    font-size: 28px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .campus-who {
+    padding: 80px 20px;
+  }
+
+  .campus-who__title {
+    font-size: 32px;
+  }
+}

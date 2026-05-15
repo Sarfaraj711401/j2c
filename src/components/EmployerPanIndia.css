@@ -1,0 +1,164 @@
+/* ================= EMPLOYER PAN INDIA ================= */
+
+.EmployerPanIndia-section{
+  background:#eef7ff;
+  padding:90px 18px 80px;
+}
+
+.EmployerPanIndia-container{
+  max-width:1200px;
+  margin:auto;
+  text-align:center;
+}
+
+.EmployerPanIndia-title{
+  font-size:32px;
+  font-weight:900;
+  color:#0f172a;
+  margin-bottom:52px;
+}
+
+/* cards */
+.EmployerPanIndia-cards{
+  display:flex;
+  gap:26px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+/* card */
+.EmployerPanIndia-card{
+  background:#ffffff;
+  width:260px;
+  padding:26px 24px;
+  border-radius:18px;
+  text-align:left;
+  box-shadow:0 12px 30px rgba(15,23,42,.08);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  cursor:pointer;
+  transition:all .25s ease;
+}
+
+.EmployerPanIndia-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 20px 44px rgba(15,23,42,.14);
+}
+
+/* content */
+.EmployerPanIndia-info h4{
+  font-size:18px;
+  font-weight:800;
+  color:#0f172a;
+  margin-bottom:6px;
+}
+
+.EmployerPanIndia-info p{
+  font-size:14px;
+  color:#475569;
+  margin:0;
+}
+
+/* arrow */
+.EmployerPanIndia-arrow{
+  font-size:22px;
+  color:#94a3b8;
+}
+
+/* dots */
+.EmployerPanIndia-dots{
+  margin-top:44px;
+  display:flex;
+  justify-content:center;
+  gap:12px;
+}
+
+.EmployerPanIndia-dots span{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#d1d5db;
+}
+
+.EmployerPanIndia-dots .active{
+  width:28px;
+  border-radius:999px;
+  background:#2563eb;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 1024px){
+  .EmployerPanIndia-title{
+    font-size:28px;
+  }
+
+  .EmployerPanIndia-card{
+    width:220px;
+    padding:22px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+  .EmployerPanIndia-section{
+    padding:60px 14px;
+  }
+
+  .EmployerPanIndia-title{
+    font-size:24px;
+    margin-bottom:30px;
+  }
+
+  .EmployerPanIndia-cards{
+    gap:16px;
+  }
+
+  .EmployerPanIndia-card{
+    width:100%;
+    max-width:400px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+
+  .EmployerPanIndia-title{
+    font-size:20px;
+  }
+
+  .EmployerPanIndia-card{
+    padding:18px;
+  }
+
+  .EmployerPanIndia-info h4{
+    font-size:16px;
+  }
+
+  .EmployerPanIndia-info p{
+    font-size:13px;
+  }
+
+  .EmployerPanIndia-arrow{
+    font-size:18px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1400px){
+
+  .EmployerPanIndia-container{
+    max-width:1300px;
+  }
+
+  .EmployerPanIndia-title{
+    font-size:36px;
+  }
+
+  .EmployerPanIndia-card{
+    width:280px;
+  }
+}

@@ -1,0 +1,78 @@
+/* ===== STATS SECTION ===== */
+.internship-stats {
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    padding: 60px 15px;
+}
+
+/* Card */
+.internship-stat-card {
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ffffff, #f0f8ff);
+    box-shadow: 0 15px 35px rgba(0,165,236,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,165,236,0.2);
+    height: 100%;
+}
+
+/* Hover */
+.internship-stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(0,165,236,0.2);
+}
+
+/* Number */
+.internship-stat-number {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    background: linear-gradient(45deg, #00A5EC, #0088c9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+/* Title */
+.internship-stat-card h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Text */
+.internship-stat-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .internship-stats {
+        padding: 50px 10px;
+    }
+
+    .internship-stat-card {
+        padding: 30px 15px;
+    }
+}
+
+/* Small devices */
+@media (max-width: 480px) {
+    .internship-stat-number {
+        font-size: 1.8rem;
+    }
+
+    .internship-stat-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+    .internship-stats {
+        padding: 80px 0;
+    }
+}

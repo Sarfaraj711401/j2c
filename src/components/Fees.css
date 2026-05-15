@@ -1,0 +1,35 @@
+/* ===== WRAPPER ===== */
+.uiux-fees-page .fees-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ✅ LEFT ALIGN CONTENT */
+.uiux-fees-page .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* 🔥 LEFT ALIGN */
+}
+
+/* ===== TITLE ===== */
+.uiux-fees-page .fees-title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 40px;
+}
+
+/* ===== CARD ===== */
+.uiux-fees-page .fee-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #eef2f6;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+  padding: 40px;
+  max-width: 520px;
+  width: 100%;
+
+  position: relative;
+}

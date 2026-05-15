@@ -1,0 +1,170 @@
+/* MAIN WRAPPER */
+.j2c-sections {
+  font-family: "Inter", sans-serif;
+}
+
+/* SECTION */
+.j2c-section {
+  padding: 70px 20px;
+}
+
+.j2c-light {
+  background: #f8fafc;
+}
+
+.j2c-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* TITLE */
+.j2c-section-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+/* ================= JOB ================= */
+.j2c-job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.j2c-job-card {
+  background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+  padding: 25px;
+  border-radius: 16px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.j2c-job-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.j2c-job-card h3 {
+  color: #0369a1;
+}
+
+.j2c-job-card p {
+  color: #0284c7;
+  font-weight: 600;
+}
+
+.j2c-job-tags span {
+  background: #bae6fd;
+  padding: 5px 10px;
+  margin: 4px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* BADGE */
+.j2c-job-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+}
+
+.j2c-job-badge.fresher {
+  background: green;
+}
+
+/* ================= ELIGIBILITY ================= */
+.j2c-eligibility-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.j2c-eligibility-card {
+  background: #e0f2fe;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.j2c-eligibility-card.highlight {
+  background: #0ea5e9;
+  color: white;
+}
+
+.j2c-icon {
+  font-size: 30px;
+}
+
+/* ================= PROCESS ================= */
+.j2c-process {
+  background: #f0f9ff;
+}
+
+.j2c-process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.j2c-process-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.j2c-step {
+  width: 45px;
+  height: 45px;
+  background: #0284c7;
+  color: white;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= HOVER SHAKE ================= */
+@keyframes j2c-shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
+
+.j2c-job-card:hover,
+.j2c-eligibility-card:hover,
+.j2c-process-card:hover {
+  animation: j2c-shake 0.4s ease;
+  box-shadow: 0 20px 40px rgba(14,165,233,0.4);
+}
+
+/* COLOR EFFECT */
+.j2c-job-card:hover {
+  background: linear-gradient(135deg, #bae6fd, #e0f2fe);
+}
+
+.j2c-eligibility-card:hover {
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+  color: white;
+}
+
+.j2c-process-card:hover {
+  background: linear-gradient(135deg, #0284c7, #0ea5e9);
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .j2c-section-title {
+    font-size: 24px;
+  }
+}

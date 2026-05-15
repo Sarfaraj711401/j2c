@@ -1,0 +1,106 @@
+/* ================= SECTION ================= */
+.ForEmployer_Testimonials{
+  background:#eaf6ff;
+  padding:80px 20px;
+}
+
+/* CONTAINER */
+.femp-test-container{
+  max-width:1200px;
+  margin:0 auto;
+  text-align:center;
+}
+
+/* TITLE */
+.femp-test-title{
+  font-size:30px;
+  font-weight:900;
+  color:#0b2b4a;
+  margin-bottom:50px;
+}
+
+/* GRID */
+.femp-test-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:28px;
+}
+
+/* CARD */
+.femp-test-card{
+  background:#ffffff;
+  padding:28px 22px;
+  border-radius:18px;
+  box-shadow:0 10px 35px rgba(0,0,0,0.08);
+  transition:all 0.3s ease;
+}
+
+.femp-test-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 45px rgba(0,0,0,0.12);
+}
+
+/* IMAGE */
+.femp-test-card img{
+  width:85px;
+  height:85px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:14px;
+  border:3px solid #eaf6ff;
+}
+
+/* NAME */
+.femp-test-card strong{
+  display:block;
+  font-size:16px;
+  color:#0b2b4a;
+  margin-bottom:6px;
+}
+
+/* TEXT */
+.femp-test-card p{
+  font-size:14px;
+  color:#556070;
+  line-height:1.5;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px){
+  .femp-test-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px){
+  .ForEmployer_Testimonials{
+    padding:60px 14px;
+  }
+
+  .femp-test-title{
+    font-size:24px;
+    margin-bottom:30px;
+  }
+
+  .femp-test-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .femp-test-card{
+    padding:24px 18px;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 1400px){
+  .femp-test-container{
+    max-width:1300px;
+  }
+
+  .femp-test-title{
+    font-size:34px;
+  }
+}

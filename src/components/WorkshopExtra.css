@@ -1,0 +1,95 @@
+/* SECTION */
+.workshop-extra-section {
+  padding: 70px 20px;
+}
+
+.workshop-extra-light {
+  background: #f1f5f9;
+}
+
+.workshop-extra-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* TEXT */
+.workshop-extra-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.workshop-extra-desc {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+/* TIMELINE */
+.workshop-timeline {
+  max-width: 700px;
+  margin: auto;
+}
+
+.workshop-step {
+  background: #ffffff;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-left: 4px solid #2563eb;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.workshop-step:hover {
+  transform: translateX(5px);
+}
+
+/* RECOGNITION */
+.workshop-highlight {
+  background: #2563eb;
+  color: white;
+  border-radius: 18px;
+  padding: 40px;
+  text-align: center;
+}
+
+.workshop-highlight img {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+}
+
+/* FAQ */
+.workshop-faq {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.workshop-faq summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.workshop-faq p {
+  margin-top: 10px;
+  color: #64748b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .workshop-extra-container h2 {
+    font-size: 24px;
+  }
+
+  .workshop-highlight {
+    padding: 25px;
+  }
+
+  .workshop-step {
+    padding: 15px;
+  }
+}

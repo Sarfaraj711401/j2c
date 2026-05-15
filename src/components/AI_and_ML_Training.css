@@ -1,0 +1,57 @@
+.main-heading {
+  color: #1a1a1a;
+  font-size: 2.2rem;
+}
+
+.sub-heading {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.instructor-card {
+  background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 20px;
+  border: 1px solid #e9ecef;
+  height: 420px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.instructor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Images */
+.img-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.img-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.img-left img,
+.img-right img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Content */
+.content h4 {
+  color: #1a1a1a;
+  font-size: 1.3rem;
+}
+
+.content p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+}

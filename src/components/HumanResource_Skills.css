@@ -1,0 +1,82 @@
+/* ROOT */
+.hr-skills {
+  width: 100%;
+  padding: 60px 20px;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* CONTAINER */
+.hr-skills__container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* TITLE */
+.hr-skills__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* GRID */
+.hr-skills__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.hr-skills__card {
+  border: 1.5px solid #7bbcff;
+  border-radius: 12px;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hr-skills__card:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+/* ICON */
+.hr-skills__icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #fff8e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* TEXT */
+.hr-skills__text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .hr-skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .hr-skills__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hr-skills__title {
+    font-size: 24px;
+  }
+}

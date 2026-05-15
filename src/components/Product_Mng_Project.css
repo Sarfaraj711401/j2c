@@ -1,0 +1,122 @@
+/* Wrapper */
+.rw-projects-section {
+    width: 100%;
+    background: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Layout */
+.rw-projects-container,
+.rw-disclaimer,
+.rw-slider-dots {
+    width: 85%;
+    margin: auto;
+}
+
+/* Heading */
+.rw-projects-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.rw-sub-heading {
+    font-size: 18px;
+    color: #6e6e6e;
+    margin-bottom: 40px;
+}
+
+/* Cards */
+.rw-projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.rw-project-card {
+    width: 420px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+    transition: 0.3s;
+}
+
+.rw-project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Active card */
+.rw-active-card {
+    background: #fff4cb;
+    border-color: #e9c16e;
+}
+
+/* Header */
+.rw-project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Tag */
+.rw-tag {
+    background: #f4b439;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Text */
+.rw-project-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 0 12px;
+    color: #000;
+}
+
+.rw-project-card p {
+    font-size: 15px;
+    line-height: 1.55;
+    color: #000;
+}
+
+/* Disclaimer */
+.rw-disclaimer {
+    margin: 25px auto 10px;
+    text-align: left;
+    color: #000;
+    font-size: 14px;
+}
+
+/* Dots */
+.rw-slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.rw-dot {
+    width: 9px;
+    height: 9px;
+    background: #d3d3d3;
+    border-radius: 50%;
+}
+
+.rw-active {
+    background: #007bff;
+}

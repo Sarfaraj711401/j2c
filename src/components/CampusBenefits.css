@@ -1,0 +1,119 @@
+/* ===== ROOT ===== */
+.campus-benefits {
+  background: #f9fafb;
+  padding: 60px 20px;
+}
+
+/* CONTAINER */
+.campus-benefits__container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* TITLE */
+.campus-benefits__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.campus-benefits__subtitle {
+  margin-top: 10px;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.campus-benefits__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* CARD */
+.campus-benefits__card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #f1f1f1;
+
+  transition: all 0.3s ease;
+}
+
+.campus-benefits__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+/* ICON */
+.campus-benefits__icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+  font-size: 26px;
+}
+
+/* ICON COLORS */
+.campus-benefits__icon.blue {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.campus-benefits__icon.purple {
+  background: #ede9fe;
+  color: #7c3aed;
+}
+
+.campus-benefits__icon.orange {
+  background: #ffedd5;
+  color: #ea580c;
+}
+
+.campus-benefits__icon.teal {
+  background: #ccfbf1;
+  color: #0d9488;
+}
+
+/* TEXT */
+.campus-benefits__card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.campus-benefits__card p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (min-width: 640px) {
+  .campus-benefits__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+  .campus-benefits__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .campus-benefits {
+    padding: 80px 20px;
+  }
+
+  .campus-benefits__title {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,112 @@
+/* Section */
+.fs-fees-section {
+    font-family: 'Roboto', sans-serif;
+    padding: 50px 0;
+}
+
+/* Title */
+.fs-fees-title {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+/* Card */
+.fs-fee-card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #eef2f6;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    max-width: 600px;
+    position: relative;
+}
+
+/* Price Row */
+.fs-price-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Prices */
+.fs-current-price {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+
+.fs-original-price {
+    font-size: 24px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+/* Badge */
+.fs-validity-badge {
+    background-color: #fff9e6;
+    color: #d4a017;
+    border: 1px solid #ffeeba;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Text */
+.fs-fee-info-text {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.fs-fee-info-text a {
+    color: #00A5EC;
+    text-decoration: underline;
+}
+
+/* T&C */
+.fs-tc-apply {
+    font-size: 14px;
+    color: #00A5EC;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 25px;
+}
+
+/* Icon */
+.fs-currency-icon-circle {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: #dbeeff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fs-currency-icon-circle i {
+    font-size: 28px;
+    color: #00A5EC;
+}
+
+/* Button */
+.fs-btn-apply-now {
+    background-color: #00A5EC;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    transition: 0.3s;
+}
+
+.fs-btn-apply-now:hover {
+    background-color: #0088c9;
+    color: #fff;
+}

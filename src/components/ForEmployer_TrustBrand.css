@@ -1,0 +1,86 @@
+/* ================= TRUSTED BRANDS ================= */
+
+.femp-trusted-section{
+  background:#fff;
+  padding:60px 18px;
+  border-top:1px solid #eef2f7;
+}
+
+.femp-container{
+  max-width:1200px;
+  margin:auto;
+}
+
+/* Title */
+.femp-trusted-title{
+  text-align:center;
+  font-weight:800;
+  font-size:24px;
+  margin-bottom:30px;
+  color:#0b2b4a;
+}
+
+/* Wrapper */
+.femp-logo-wrapper{
+  overflow:hidden;
+  width:100%;
+}
+
+/* Slider */
+.femp-logo-slider{
+  display:flex;
+  align-items:center;
+  gap:50px;
+  width:max-content;
+  animation:femp-logo-scroll 25s linear infinite;
+}
+
+/* Logos */
+.femp-logo-slider img{
+  height:50px;
+  width:auto;
+  object-fit:contain;
+  transition:transform .3s ease;
+}
+
+/* Hover */
+.femp-logo-slider img:hover{
+  transform:scale(1.08);
+}
+
+/* Animation */
+@keyframes femp-logo-scroll{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+
+/* Pause on hover */
+.femp-logo-wrapper:hover .femp-logo-slider{
+  animation-play-state:paused;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px){
+  .femp-logo-slider{
+    gap:35px;
+  }
+
+  .femp-logo-slider img{
+    height:42px;
+  }
+}
+
+@media (max-width: 576px){
+  .femp-trusted-title{
+    font-size:18px;
+  }
+
+  .femp-logo-slider{
+    gap:25px;
+  }
+
+  .femp-logo-slider img{
+    height:36px;
+  }
+}

@@ -1,0 +1,178 @@
+/* SECTION */
+.femp-feature-section{
+  background:#fff;
+  padding:48px 18px;
+}
+
+/* CONTAINER */
+.femp-feature-inner{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  gap:36px;
+  align-items:flex-start;
+}
+
+/* LEFT */
+.femp-feature-left{
+  width:45%;
+}
+
+/* CARD */
+.femp-feature-card{
+  background:#eef6ff;
+  padding:18px;
+  border-radius:12px;
+  border-left:6px solid #0b66c3;
+  display:flex;
+  gap:14px;
+  align-items:center;
+  margin-bottom:18px;
+}
+
+.femp-feature-title{
+  font-weight:800;
+  color:#093953;
+}
+
+.femp-feature-desc{
+  font-size:14px;
+  color:#0b3b66;
+  margin-top:6px;
+}
+
+/* LIST */
+.femp-feature-list{
+  margin-top:8px;
+}
+
+.femp-row{
+  display:flex;
+  gap:14px;
+  margin:14px 0;
+  align-items:flex-start;
+}
+
+.femp-dot{
+  width:16px;
+  height:16px;
+  border-radius:6px;
+  background:#e9f2ff;
+  border:3px solid #0b66c3;
+  flex:0 0 16px;
+}
+
+.femp-row-title{
+  font-weight:700;
+  color:#0b2b4a;
+}
+
+.femp-row-desc{
+  color:#556070;
+  margin-top:6px;
+  font-size:14px;
+}
+
+/* RIGHT */
+.femp-feature-right{
+  width:55%;
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+}
+
+/* BOX */
+.femp-feature-box{
+  background:#eef7ff;
+  padding:16px;
+  border-radius:12px;
+  flex:1;
+}
+
+/* HEADER */
+.femp-box-header{
+  background:#0b66c3;
+  color:#fff;
+  padding:10px;
+  border-radius:8px;
+  text-align:center;
+  font-weight:800;
+}
+
+/* CONTENT */
+.femp-box-content{
+  margin-top:12px;
+}
+
+/* MINI CARD */
+.femp-card-mini{
+  background:#eef7ff;
+  padding:10px;
+  border-radius:8px;
+  margin-bottom:8px;
+}
+
+.femp-mini-title{
+  font-weight:800;
+}
+
+.femp-mini-desc{
+  color:#475569;
+  margin-top:6px;
+  font-size:14px;
+}
+
+/* VIDEO */
+.femp-video-box{
+  background:#ddd;
+  height:140px;
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:26px;
+}
+
+/* TEXT */
+.femp-score{
+  margin-top:10px;
+}
+
+.femp-overview{
+  color:#475569;
+  font-size:14px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px){
+  .femp-feature-inner{
+    flex-direction:column;
+  }
+
+  .femp-feature-left,
+  .femp-feature-right{
+    width:100%;
+  }
+
+  .femp-feature-right{
+    flex-direction:column;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px){
+  .femp-feature-title{
+    font-size:16px;
+  }
+
+  .femp-feature-desc,
+  .femp-row-desc{
+    font-size:13px;
+  }
+
+  .femp-video-box{
+    height:120px;
+  }
+}

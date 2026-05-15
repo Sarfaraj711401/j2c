@@ -1,0 +1,148 @@
+/* ===== ROOT WRAPPER (IMPORTANT) ===== */
+.campus-hero {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ===== HERO ===== */
+.campus-hero__section {
+  background: linear-gradient(to bottom, #eff6ff, #ffffff);
+  overflow: hidden;
+}
+
+.campus-hero__container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 60px 20px 30px;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 30px;
+}
+
+/* LEFT */
+.campus-hero__left {
+  text-align: center;
+  max-width: 600px;
+}
+
+.campus-hero__badge {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.campus-hero__title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.2;
+}
+
+.campus-hero__title span {
+  color: #2563eb;
+}
+
+.campus-hero__desc {
+  margin-top: 15px;
+  color: #4b5563;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* CTA */
+.campus-hero__cta {
+  margin-top: 20px;
+}
+
+.campus-hero__btn {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-decoration: none;
+}
+
+.campus-hero__btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.campus-hero__small {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* RIGHT */
+.campus-hero__right img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* ===== STATS ===== */
+.campus-hero__stats {
+  margin-top: -8px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background: white;
+}
+
+.campus-hero__stats-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 16px 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.campus-hero__stat {
+  font-size: 16px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 768px) {
+  .campus-hero__container {
+    flex-direction: row;
+    padding: 80px 40px 30px;
+  }
+
+  .campus-hero__left {
+    text-align: left;
+    flex: 1;
+  }
+
+  .campus-hero__right {
+    flex: 1;
+  }
+
+  .campus-hero__title {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .campus-hero__title {
+    font-size: 56px;
+  }
+
+  .campus-hero__container {
+    gap: 60px;
+  }
+}

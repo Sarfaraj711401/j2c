@@ -1,0 +1,283 @@
+  
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f0f9ff;
+        padding: 30px;
+        min-height: 100vh;
+    }
+
+    .ai-section-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .ai-card {
+        background-color: #ffffff;
+        border-radius: 18px;
+        box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+        padding: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        border: 1px solid #e0f2fe;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .ai-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #8b5cf6, #a78bfa, #7c3aed);
+    }
+
+    .ai-text-block {
+        flex: 1.2;
+    }
+
+    .ai-title {
+        font-size: 34px;
+        font-weight: 700;
+        color: #111827;
+        margin-bottom: 24px;
+        line-height: 1.2;
+        position: relative;
+    }
+
+    .ai-title::after {
+        content: 'NEW';
+        position: absolute;
+        top: -8px;
+        right: -60px;
+        background: linear-gradient(135deg, #f59e0b, #fbbf24);
+        color: white;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 11px;
+        font-weight: 700;
+        transform: rotate(12deg);
+        box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+    }
+
+    .ai-description {
+        font-size: 16px;
+        line-height: 1.7;
+        color: #374151;
+        max-width: 540px;
+        margin-bottom: 32px;
+    }
+
+    .ai-tools-list {
+        list-style: none;
+    }
+
+    .ai-tools-list li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f5f9;
+    }
+
+    .ai-tools-list li:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .ai-tool-icon {
+        width: 48px;
+        height: 48px;
+        background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);
+    }
+
+    .ai-tool-icon i {
+        font-size: 20px;
+        color: white;
+    }
+
+    .ai-tool-name {
+        font-weight: 600;
+        color: #1e40af;
+        font-size: 15px;
+    }
+
+    .ai-visual-block {
+        flex: 1;
+        position: relative;
+        min-height: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-character {
+        position: relative;
+        z-index: 3;
+        width: 220px;
+        height: 290px;
+        background-image: url("https://images.pexels.com/photos/1596449/pexels-photo-1596449.jpeg?auto=compress&cs=tinysrgb&w=600");
+        background-size: cover;
+        background-position: center;
+        border-radius: 24px;
+        box-shadow: 0 20px 45px rgba(139, 92, 246, 0.25);
+    }
+
+    .laptop {
+        position: absolute;
+        bottom: 20px;
+        right: -40px;
+        width: 180px;
+        height: 120px;
+        background: linear-gradient(145deg, #ffffff, #f8fafc);
+        border-radius: 20px;
+        border: 2px solid #e2e8f0;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .laptop::before {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        right: 12px;
+        height: 70px;
+        background: linear-gradient(135deg, #1e293b, #334155);
+        border-radius: 8px;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .laptop-screen-glow {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        right: 16px;
+        height: 64px;
+        background: linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(167, 139, 250, 0.3));
+        border-radius: 6px;
+        animation: pulse 2s infinite;
+        box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+    }
+
+    .ai-chat-bubble {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 140px;
+        height: 80px;
+        background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+        border-radius: 20px 20px 8px 20px;
+        box-shadow: 0 12px 30px rgba(139, 92, 246, 0.4);
+    }
+
+    .ai-chat-bubble::after {
+        content: '';
+        position: absolute;
+        bottom: -12px;
+        right: 40px;
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 12px solid #8b5cf6;
+    }
+
+    .ai-face {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 36px;
+        height: 36px;
+        background: linear-gradient(135deg, #ffffff, #f1f5f9);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .ai-face::before {
+        content: '😊';
+        font-size: 20px;
+    }
+
+    .skill-badges {
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+    }
+
+    .skill-badge {
+        background: linear-gradient(135deg, #10b981, #059669);
+        color: white;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+    }
+
+    @keyframes pulse {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; }
+    }
+
+    @media (max-width: 992px) {
+        .ai-card {
+            flex-direction: column;
+            padding: 35px 25px;
+            text-align: center;
+        }
+        .ai-visual-block {
+            order: -1;
+            min-height: 280px;
+            margin-bottom: 30px;
+        }
+        body {
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .ai-title {
+            font-size: 26px;
+        }
+        .ai-title::after {
+            right: -40px;
+            font-size: 10px;
+            padding: 3px 10px;
+        }
+        .ai-card {
+            padding: 25px 20px;
+        }
+        .main-character {
+            width: 180px;
+            height: 250px;
+        }
+        .laptop {
+            width: 140px;
+            height: 100px;
+            right: -30px;
+        }
+    }
+    

@@ -1,0 +1,111 @@
+/* SECTION */
+.pp-tpo-registration {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    padding: 100px 20px;
+}
+
+/* CARD */
+.pp-tpo-card {
+    max-width: 990px;
+    margin: auto;
+    background: #ffffff;
+    padding: 40px 35px;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+}
+
+/* TITLE */
+.pp-tpo-card h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 6px;
+}
+
+/* SUBTITLE */
+.pp-tpo-card p {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* GRID */
+.pp-tpo-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* GROUP */
+.pp-tpo-group {
+    margin-bottom: 18px;
+}
+
+.pp-tpo-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* INPUT */
+.pp-tpo-group input,
+.pp-tpo-group textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 14px;
+}
+
+/* TEXTAREA */
+.pp-tpo-group textarea {
+    resize: none;
+    min-height: 90px;
+}
+
+/* FULL WIDTH */
+.pp-full-width {
+    grid-column: span 2;
+}
+
+/* BUTTON */
+.pp-tpo-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pp-tpo-btn:hover {
+    background: #1e40af;
+}
+
+/* LOGIN */
+.pp-tpo-login {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.pp-tpo-login a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .pp-tpo-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pp-full-width {
+        grid-column: span 1;
+    }
+}

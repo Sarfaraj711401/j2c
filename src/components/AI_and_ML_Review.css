@@ -1,0 +1,37 @@
+.ai-projects-section {
+    background-color: #ffffff;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid #e6e6e6;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #222;
+    line-height: 1.4;
+}
+
+.title-underline {
+    width: 50px;
+    height: 4px;
+    background-color: #00A5EC;
+    margin: 12px 0 18px;
+    border-radius: 2px;
+}
+
+.project-desc {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.7;
+}

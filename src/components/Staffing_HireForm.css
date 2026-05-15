@@ -1,0 +1,167 @@
+/* ================= WRAPPER SAFE ================= */
+.j2c-hire-section * {
+  box-sizing: border-box;
+}
+
+/* ================= SECTION ================= */
+.j2c-hire-section {
+  padding: 80px 20px;
+  background: #eff6ff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================= CONTAINER ================= */
+.j2c-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ================= CARD ================= */
+.j2c-hire-card {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* ================= LEFT PANEL ================= */
+.j2c-hire-left {
+  flex: 1;
+  min-width: 280px;
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: #ffffff;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.j2c-hire-left h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.j2c-hire-left p {
+  font-size: 14px;
+  color: #dbeafe;
+}
+
+/* CONTACT */
+.j2c-contact-info {
+  margin-top: 30px;
+}
+
+.j2c-contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.j2c-icon-box {
+  width: 38px;
+  height: 38px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* ================= RIGHT PANEL ================= */
+.j2c-hire-right {
+  flex: 2;
+  min-width: 300px;
+  padding: 40px;
+}
+
+/* FORM GRID */
+.j2c-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* FULL WIDTH */
+.full {
+  grid-column: span 2;
+}
+
+/* FORM GROUP */
+.j2c-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.j2c-form-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+/* INPUTS */
+.j2c-form-group input,
+.j2c-form-group select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.j2c-form-group input:focus,
+.j2c-form-group select:focus {
+  border-color: #2563eb;
+  outline: none;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+
+/* BUTTON */
+.j2c-hire-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  background: #1d4ed8;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.j2c-hire-btn:hover {
+  background: #1e40af;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .j2c-hire-card {
+    flex-direction: column;
+  }
+
+  .j2c-hire-left {
+    text-align: center;
+    align-items: center;
+  }
+
+  .j2c-contact-item {
+    justify-content: center;
+  }
+
+  .j2c-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full {
+    grid-column: span 1;
+  }
+}

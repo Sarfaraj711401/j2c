@@ -1,0 +1,75 @@
+.teacher-title {
+    color: #1a1a1a;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.teacher-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Card */
+.instructor-card {
+    position: relative;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    border: 1px solid #e9ecef;
+    height: 420px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.instructor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Image */
+.profile-img {
+    position: absolute;
+    top: 0;
+    padding: 20px;
+}
+
+.profile-img.start {
+    left: 0;
+}
+
+.profile-img.end {
+    right: 0;
+}
+
+.profile-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Content */
+.card-content {
+    padding-top: 100px;
+}
+
+.card-content h4 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #1a1a1a;
+}
+
+.role {
+    color: #888;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.desc {
+    font-size: 0.92rem;
+    color: #333;
+    line-height: 1.6;
+}

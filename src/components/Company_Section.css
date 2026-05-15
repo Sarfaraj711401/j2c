@@ -1,0 +1,138 @@
+/* ================= WHITE SECTION ================= */
+.white-section {
+    background: white;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+/* ================= COUNSELLOR BOX ================= */
+.counsellor-box {
+    background: #fff;
+    width: 88%;
+    max-width: 1150px;
+    margin: 0 auto 60px;
+    padding: 28px 40px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.counsellor-box p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0c1a31;
+    width: 70%;
+}
+
+.counsellor-btn {
+    background: #007bff;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.counsellor-btn:hover {
+    background: #0066d3;
+}
+
+/* ================= COMPANIES ================= */
+.companies {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.companies h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0c1a31;
+    margin-bottom: 35px;
+}
+
+.company-logos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.company-logos img {
+    height: 46px;
+    opacity: 0.95;
+    transition: 0.3s;
+}
+
+.company-logos img:hover {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+/* ================= STATS ================= */
+.stats-box {
+    width: 88%;
+    max-width: 1150px;
+    background: white;
+    margin: 0 auto;
+    padding: 35px 0;
+    border-radius: 22px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.stat {
+    width: 25%; /* ✅ fixed (you have 4 items) */
+}
+
+.stat h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #3b2bc5;
+    margin-bottom: 6px;
+}
+
+.stat p {
+    font-size: 15px;
+    color: #444;
+}
+
+.stat:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+
+    .counsellor-box {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .counsellor-box p {
+        width: 100%;
+    }
+
+    .stats-box {
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .stat {
+        width: 100%;
+        border: none !important;
+    }
+
+    .company-logos {
+        gap: 25px;
+    }
+}

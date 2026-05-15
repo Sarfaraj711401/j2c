@@ -1,0 +1,122 @@
+/* ===== HERO SECTION ===== */
+.internship-hero {
+    width: 100%;
+    background: linear-gradient(135deg, #00A5EC 0%, #0088c9 100%);
+    color: #fff;
+    padding: 140px 15px 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background pattern */
+.internship-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><pattern id='grain' width='100' height='100' patternUnits='userSpaceOnUse'><circle cx='25' cy='25' r='1' fill='rgba(255,255,255,0.1)'/><circle cx='75' cy='75' r='1.5' fill='rgba(255,255,255,0.05)'/></pattern></defs><rect width='100' height='100' fill='url(%23grain)'/></svg>");
+    opacity: 0.3;
+}
+
+/* Content */
+.internship-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Title */
+.internship-hero-title {
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Subtitle */
+.internship-hero-lead {
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    margin-bottom: 35px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* Small text */
+.internship-hero-small {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 6px;
+    opacity: 0.8;
+}
+
+/* Buttons */
+.internship-btn {
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* Primary button */
+.internship-btn-primary {
+    background: linear-gradient(135deg, #00A5EC, #0088c9);
+    color: #fff;
+    box-shadow: 0 10px 25px rgba(0,165,236,0.4);
+}
+
+.internship-btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(0,165,236,0.6);
+}
+
+/* Outline button */
+.internship-btn-outline {
+    border: 2px solid rgba(255,255,255,0.6);
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+}
+
+.internship-btn-outline:hover {
+    background: #fff;
+    color: #00A5EC;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .internship-hero {
+        padding: 110px 15px 90px;
+    }
+
+    .internship-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Small devices */
+@media (max-width: 480px) {
+    .internship-hero {
+        padding: 90px 10px 70px;
+    }
+
+    .internship-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .internship-hero-lead {
+        font-size: 1rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+    .internship-hero {
+        padding: 160px 0 140px;
+    }
+}

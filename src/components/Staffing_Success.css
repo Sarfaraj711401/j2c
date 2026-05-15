@@ -1,0 +1,137 @@
+/* ================= SECTION ================= */
+.j2c-success-section {
+  padding: 80px 20px;
+  background: #f8fafc;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ================= CONTAINER ================= */
+.j2c-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ================= TITLE ================= */
+.j2c-section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* ================= GRID ================= */
+.j2c-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.j2c-col {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* ================= CARD ================= */
+.j2c-success-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  border-left: 4px solid;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  height: 100%;
+  transition: 0.3s;
+}
+
+.j2c-success-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* BORDER COLORS */
+.border-primary {
+  border-color: #2563eb;
+}
+
+.border-success {
+  border-color: #16a34a;
+}
+
+/* ================= HEADER ================= */
+.j2c-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* ================= BADGES ================= */
+.j2c-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.badge-primary {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge-success {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+/* META TEXT */
+.j2c-meta {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* ================= TEXT ================= */
+.j2c-success-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.j2c-description {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+/* ================= RESULT ================= */
+.j2c-result-box {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 15px;
+}
+
+.j2c-result-box strong {
+  font-size: 14px;
+  color: #111827;
+}
+
+.j2c-success-text {
+  font-size: 14px;
+  color: #16a34a;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .j2c-section-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .j2c-row {
+    flex-direction: column;
+  }
+
+}

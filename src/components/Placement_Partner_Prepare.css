@@ -1,0 +1,99 @@
+/* SECTION */
+.pp-prepare-section {
+    width: 100%;
+    background: #f8fafc;
+    padding: 90px 20px;
+}
+
+/* TITLE */
+.pp-prepare-title {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 60px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* GRID */
+.pp-prepare-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* CARD */
+.pp-prepare-card {
+    text-align: center;
+    padding: 10px;
+}
+
+/* STEP CIRCLE */
+.pp-prepare-step {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 auto 25px;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+/* HEADING */
+.pp-prepare-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #0f172a;
+}
+
+/* TEXT */
+.pp-prepare-card p {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .pp-prepare-title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .pp-prepare-grid {
+        gap: 30px;
+    }
+
+    .pp-prepare-step {
+        width: 70px;
+        height: 70px;
+        font-size: 24px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .pp-prepare-section {
+        padding: 60px 15px;
+    }
+
+    .pp-prepare-title {
+        font-size: 24px;
+    }
+
+    .pp-prepare-card h3 {
+        font-size: 18px;
+    }
+
+    .pp-prepare-card p {
+        font-size: 14px;
+    }
+}

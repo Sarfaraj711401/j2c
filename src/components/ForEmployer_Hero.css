@@ -1,0 +1,251 @@
+/* HERO */
+body{
+  margin:0;
+  padding:0;
+}
+
+.femp-hero-wrap{
+  width:100%;
+  background:linear-gradient(180deg,#083a66,#0c4b7a);
+  color:#fff;
+  padding:140px 10px 60px;
+}
+
+.femp-container{
+  max-width:1100px;
+  width:100%;              /* ✅ fix */
+  margin:auto;
+  display:flex;
+  gap:30px;
+  align-items:center;      /* ✅ better alignment */
+}
+
+/* LEFT */
+.femp-hero-left{
+  flex:1;
+  min-width:0;             /* ✅ prevent overflow */
+}
+
+.femp-hero-badge{
+  padding:10px 16px;
+  border-radius:999px;
+  background:rgba(255,255,255,.1);
+}
+
+.femp-hero-title{
+  font-size:54px;
+  font-weight:900;
+}
+
+.femp-hero-title span{color:#ffc342}
+
+.femp-hero-info{
+  background:rgba(255,255,255,.1);
+  padding:18px;
+  border-radius:14px;
+}
+
+.femp-hero-metrics{
+  display:flex;
+  gap:16px;
+  margin-top:26px;
+  flex-wrap:wrap;          /* ✅ fix */
+}
+
+.femp-metric{
+  flex:1;
+  min-width:120px;         /* ✅ fix */
+  background:rgba(0,0,0,.15);
+  padding:16px;
+  border-radius:12px;
+}
+
+/* FORM */
+.femp-hero-right{
+  width:100%;              /* ✅ fix */
+  max-width:380px;         /* keeps design */
+  flex-shrink:0;           /* ✅ prevent collapse */
+}
+
+.femp-card{
+  background:#fff;
+  border-radius:18px;
+  padding:24px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.08);
+  border:1px solid #eef2f7;
+  overflow:visible;
+}
+
+/* GOOGLE BUTTON */
+.femp-google-btn{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:13px;
+  border-radius:12px;
+  border:1px solid #e5e7eb;
+  background:#fff;
+  font-weight:600;
+  cursor:pointer;
+  transition:all 0.2s ease;
+}
+
+.femp-google-btn:hover{
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  transform:translateY(-1px);
+}
+
+.femp-google-btn img{
+  width:18px;
+  height:18px;
+}
+
+/* DIVIDER */
+.femp-divider{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:18px 0;
+  font-size:13px;
+  font-weight:600;
+  color:#94a3b8;
+}
+
+.femp-divider::before,
+.femp-divider::after{
+  content:"";
+  flex:1;
+  height:1px;
+  background:#e5e7eb;
+}
+
+/* LABEL */
+label{
+  display:block;
+  font-size:14px;
+  font-weight:600;
+  color:#1e293b;
+  margin:16px 0 6px;
+}
+
+/* INPUT */
+input{
+  width:100%;
+  padding:14px 16px;
+  border-radius:12px;
+  border:1px solid #dbe2ea;
+  background:#f9fbff;
+  font-size:14px;
+  transition:all 0.2s ease;
+}
+
+input::placeholder{
+  color:#94a3b8;
+}
+
+input:focus{
+  outline:none;
+  background:#fff;
+  border-color:#0b66c3;
+  box-shadow:0 0 0 3px rgba(11,102,195,0.15);
+}
+
+/* MOBILE */
+.femp-mobile-box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.femp-mobile-box span{
+  padding:14px 16px;
+  background:#eef2f7;
+  border-radius:12px;
+  font-weight:600;
+  border:1px solid #dbe2ea;
+  height:48px;
+  display:flex;
+  align-items:center;
+}
+
+.femp-mobile-box input{
+  flex:1;
+  height:48px;
+}
+
+/* BUTTON */
+.femp-submit-btn{
+  width:100%;
+  margin-top:18px;
+  padding:14px;
+  border:none;
+  border-radius:14px;
+  background:linear-gradient(135deg,#ff8a00,#ffb347);
+  color:#fff;
+  font-weight:700;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.femp-submit-btn:hover{
+  transform:translateY(-2px);
+}
+
+/* LOGIN NOTE */
+.femp-login-note{
+  text-align:center;
+  margin-top:18px;
+  font-size:14px;
+  color:#475569;
+}
+
+/* TEXT */
+.femp-small-muted{
+  font-size:12px;
+  color:#64748b;
+  margin-top:10px;
+}
+
+/* ERROR */
+.femp-error-text{
+  color:red;
+  font-size:13px;
+  margin-top:5px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 1024px){
+  .femp-container{
+    flex-direction:column;
+  }
+
+  .femp-hero-title{
+    font-size:42px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+  .femp-hero-wrap{
+    padding:120px 10px 40px;
+  }
+
+  .femp-hero-title{
+    font-size:32px;
+  }
+
+  .femp-hero-metrics{
+    flex-direction:column;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+  .femp-hero-title{
+    font-size:26px;
+  }
+}

@@ -1,0 +1,131 @@
+/* Wrapper */
+.fees-sec-wrapper {
+    padding: 50px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Container */
+.fees-sec-container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Title */
+.fees-sec-title {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+/* Card */
+.fees-sec-card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #eef2f6;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    max-width: 600px;
+    position: relative;
+}
+
+/* Price Layout */
+.fees-sec-price-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.fees-sec-current {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+
+.fees-sec-original {
+    font-size: 24px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+/* Badge */
+.fees-sec-badge {
+    background-color: #fff9e6;
+    color: #d4a017;
+    border: 1px solid #ffeeba;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Text */
+.fees-sec-text {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.fees-sec-text a {
+    color: #00A5EC;
+    text-decoration: underline;
+}
+
+/* TC */
+.fees-sec-tc {
+    font-size: 14px;
+    color: #00A5EC;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 25px;
+}
+
+/* Icon */
+.fees-sec-icon-circle {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: #dbeeff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fees-sec-icon-circle i {
+    font-size: 28px;
+    color: #00A5EC;
+}
+
+/* Button */
+.fees-sec-btn {
+    background-color: #00A5EC;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fees-sec-btn:hover {
+    background-color: #0088c9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .fees-sec-card {
+        padding: 25px;
+    }
+
+    .fees-sec-current {
+        font-size: 28px;
+    }
+
+    .fees-sec-original {
+        font-size: 18px;
+    }
+}

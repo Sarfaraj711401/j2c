@@ -1,0 +1,151 @@
+/* ================= PROJECTS SECTION ================= */
+.projects-section {
+    width: 100%;
+    background: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container */
+.projects-container,
+.disclaimer,
+.slider-dots {
+    width: 85%;
+    margin: auto;
+}
+
+/* ================= HEADINGS ================= */
+.projects-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.projects-section .sub-heading {
+    font-size: 18px;
+    color: #6e6e6e;
+    margin-bottom: 40px;
+}
+
+/* ================= CARDS ================= */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.project-card {
+    width: 420px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+/* Hover Effect 🔥 */
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Active Card Fix */
+.active-card {
+    border: 1px solid #00A5EC;
+}
+
+/* Header */
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.project-header img {
+    margin-bottom: 10px;
+}
+
+/* Text */
+.project-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 0 12px;
+    color: #000;
+}
+
+.project-card p {
+    font-size: 15px;
+    line-height: 1.55;
+    color: #000;
+}
+
+/* Tag (if used) */
+.tag {
+    background: #f4b439;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* ================= DISCLAIMER ================= */
+.disclaimer {
+    margin: 25px auto 10px;
+    text-align: left;
+    color: #000;
+    font-size: 14px;
+}
+
+/* ================= DOTS ================= */
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+    background: #d3d3d3;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.dot.active {
+    width: 26px;
+    background: #007bff;
+    border-radius: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+
+    .projects-section h2 {
+        font-size: 28px;
+    }
+
+    .projects-section .sub-heading {
+        font-size: 16px;
+    }
+}

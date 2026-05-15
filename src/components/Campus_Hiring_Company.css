@@ -1,0 +1,83 @@
+/* ===== SECTION ===== */
+.j2c-company-section {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  padding: 60px 20px;
+}
+
+/* CONTAINER */
+.j2c-company-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* TITLE */
+.j2c-company-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #0f172a;
+}
+
+/* GRID */
+.j2c-company-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+}
+
+/* CARD */
+.j2c-company-card {
+  background: rgba(255,255,255,0.95);
+  padding: 28px 22px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+
+  box-shadow:
+    0 14px 35px rgba(56,189,248,0.35),
+    inset 0 0 0 1px rgba(255,255,255,0.7);
+
+  transition: all 0.35s ease;
+}
+
+/* HOVER EFFECT */
+.j2c-company-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 25px 60px rgba(14,165,233,0.45);
+}
+
+/* TEXT */
+.j2c-company-card h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #0369a1;
+}
+
+.j2c-company-card p {
+  font-size: 14px;
+  color: #075985;
+}
+
+/* BADGE */
+.j2c-company-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+  color: #ffffff;
+  padding: 5px 12px;
+  font-size: 11px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .j2c-company-title {
+    font-size: 22px;
+  }
+
+  .j2c-company-card {
+    padding: 22px;
+  }
+}

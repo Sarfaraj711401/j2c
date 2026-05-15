@@ -1,0 +1,290 @@
+/* ===== WRAPPER ===== */
+.data-science-page .hero-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 80px 50px;
+    gap:55px;
+    flex-wrap:wrap; /* ✅ responsive fix */
+
+    background:#0B1E6D;
+    color:white;
+}
+
+/* ===== LEFT SECTION ===== */
+.data-science-page .hero-left{
+    flex:1;
+    min-width:300px;
+}
+
+.data-science-page .badges{
+    display:flex;
+    gap:12px;
+    margin-bottom:15px;
+    flex-wrap:wrap;
+}
+
+.data-science-page .badges span{
+    background:white;
+    color:#222;
+    padding:6px 14px;
+    border-radius:18px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.data-science-page .hero-left h1{
+    font-size:46px;
+    font-weight:700;
+    line-height:55px;
+    margin-bottom:15px;
+}
+
+.data-science-page .update-tag{
+    background:#ffffff35;
+    padding:5px 12px;
+    font-size:12px;
+    border-radius:14px;
+    margin-left:8px;
+}
+
+.data-science-page .hero-left ul{
+    margin:22px 0 28px;
+    padding-left:0;
+}
+
+.data-science-page .hero-left li{
+    font-size:17px;
+    margin-bottom:10px;
+    list-style:none;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.data-science-page .hero-left li::before{
+    content:"✔";
+    color:#39ff96;
+    font-weight:900;
+}
+
+/* ===== PRICE CARD ===== */
+.data-science-page .hero-card{
+    background:#1C2F88;
+    padding:25px;
+    border-radius:14px;
+    margin-top:15px;
+}
+
+.data-science-page .hero-card h3{
+    font-size:20px;
+    margin-bottom:15px;
+    font-weight:600;
+}
+
+.data-science-page .hero-card-box{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+    border-top:1px solid rgba(255,255,255,0.3);
+    padding-top:14px;
+    gap:20px;
+}
+
+.data-science-page .hero-col h2{
+    font-size:26px;
+    margin-top:4px;
+}
+
+.data-science-page .strike{
+    text-decoration:line-through;
+    font-size:13px;
+    color:#ffbaba;
+    margin-left:5px;
+}
+
+.data-science-page .tag{
+    padding:4px 10px;
+    border-radius:13px;
+    font-size:11px;
+    font-weight:600;
+}
+
+.data-science-page .yellow{
+    background:#ffeb3b;
+    color:#000;
+}
+
+.data-science-page .green{
+    background:#9cff9a;
+    color:#000;
+    margin-top:6px;
+    display:inline-block;
+}
+
+/* ===== PARTNER BOX ===== */
+.data-science-page .partner-box{
+    margin-top:30px;
+}
+
+.data-science-page .logo-pill{
+    background:white;
+    color:#222;
+    font-size:13px;
+    font-weight:600;
+    padding:6px 14px;
+    border-radius:6px;
+    margin-right:10px;
+    margin-top:5px;
+    display:inline-block;
+}
+
+/* ===== ALERT ===== */
+.data-science-page .alert{
+    padding:12px 18px;
+    border-radius:6px;
+    font-size:15px;
+    font-weight:500;
+    margin-bottom:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    animation:fadeIn 0.4s ease-in-out;
+}
+
+.data-science-page .alert-success{
+    background:#e6f9e8;
+    color:#1b7c2d;
+    border-left:4px solid #28a745;
+}
+
+.data-science-page .alert-danger{
+    background:#fdeaea;
+    color:#b22222;
+    border-left:4px solid #dc3545;
+}
+
+.data-science-page .btn-close{
+    background:none;
+    border:none;
+    font-size:18px;
+    cursor:pointer;
+    color:inherit;
+}
+
+.data-science-page .btn-close:hover{
+    opacity:0.6;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;transform:translateY(-5px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+/* ===== FORM ===== */
+.data-science-page .hero-form{
+    flex:1;
+    min-width:300px;
+    background:white;
+    padding:32px;
+    border-radius:14px;
+    color:#222;
+    box-shadow:0 6px 20px rgba(0,0,0,.12);
+}
+
+.data-science-page .hero-form h3{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.data-science-page .hero-form label{
+    font-size:14px;
+    font-weight:600;
+    margin-top:8px;
+    display:block;
+}
+
+.data-science-page .hero-form input,
+.data-science-page .hero-form select{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    margin-bottom:14px;
+    border:1px solid #cfcfcf;
+    border-radius:7px;
+    font-size:14px;
+}
+
+.data-science-page .apply-btn{
+    width:100%;
+    padding:12px;
+    background:#0076FF;
+    border:none;
+    border-radius:7px;
+    color:white;
+    font-weight:600;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.data-science-page .apply-btn:hover{
+    background:#0063d1;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 992px){
+    .data-science-page .hero-section{
+        padding:50px 30px;
+        gap:40px;
+    }
+
+    .data-science-page .hero-left h1{
+        font-size:34px;
+        line-height:42px;
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px){
+    .data-science-page .hero-section{
+        flex-direction:column;
+        padding:40px 20px;
+        align-items:flex-start;
+    }
+
+    .data-science-page .hero-left,
+    .data-science-page .hero-form{
+        width:100%;
+    }
+
+    .data-science-page .hero-left h1{
+        font-size:28px;
+        line-height:36px;
+    }
+
+    .data-science-page .hero-card-box{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 480px){
+    .data-science-page .hero-section{
+        padding:30px 15px;
+    }
+
+    .data-science-page .hero-left h1{
+        font-size:24px;
+        line-height:32px;
+    }
+
+    .data-science-page .hero-form{
+        padding:20px;
+    }
+
+    .data-science-page .hero-card{
+        padding:18px;
+    }
+}

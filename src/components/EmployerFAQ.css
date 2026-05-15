@@ -1,0 +1,114 @@
+/* ================= EMPLOYER FAQ ================= */
+
+.EmployerFAQ-section{
+  background:#fff;
+  padding:70px 18px;
+}
+
+.EmployerFAQ-container{
+  max-width:900px;
+  margin:auto;
+}
+
+.EmployerFAQ-title{
+  text-align:center;
+  font-size:30px;
+  font-weight:900;
+  color:#0f172a;
+  margin-bottom:40px;
+}
+
+/* item */
+.EmployerFAQ-item{
+  background:#f8fbff;
+  margin:12px 0;
+  padding:16px 20px;
+  border-radius:12px;
+  cursor:pointer;
+  transition:all 0.3s ease;
+  border:1px solid #e2e8f0;
+}
+
+/* question */
+.EmployerFAQ-question{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-weight:600;
+  font-size:16px;
+  color:#0f172a;
+}
+
+/* icon */
+.EmployerFAQ-icon{
+  font-size:20px;
+  font-weight:700;
+  color:#2563eb;
+}
+
+/* answer */
+.EmployerFAQ-answer{
+  font-size:14px;
+  color:#475569;
+  margin-top:10px;
+  line-height:1.5;
+
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.3s ease;
+}
+
+/* active state */
+.EmployerFAQ-item.active .EmployerFAQ-answer{
+  max-height:500px;
+}
+
+/* hover */
+.EmployerFAQ-item:hover{
+  background:#eef6ff;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 1024px){
+  .EmployerFAQ-title{
+    font-size:26px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+  .EmployerFAQ-section{
+    padding:60px 14px;
+  }
+
+  .EmployerFAQ-title{
+    font-size:22px;
+  }
+
+  .EmployerFAQ-question{
+    font-size:15px;
+  }
+
+  .EmployerFAQ-answer{
+    font-size:13px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+
+  .EmployerFAQ-title{
+    font-size:20px;
+  }
+
+  .EmployerFAQ-item{
+    padding:14px 16px;
+  }
+
+  .EmployerFAQ-icon{
+    font-size:18px;
+  }
+}

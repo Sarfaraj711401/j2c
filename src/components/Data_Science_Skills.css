@@ -1,0 +1,103 @@
+/* ===== SECTION ===== */
+.skills-section {
+  background-color: #03156B;
+  font-family: 'Roboto', sans-serif;
+  padding: 80px 0;
+}
+
+/* ===== TITLE ===== */
+.skills-title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+/* ===== CARD ===== */
+.skill-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 18px 20px;
+  border: 1px solid #e5f3ff;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  height: 100%; /* equal height cards */
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+/* Hover Effect */
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.15);
+  border-color: #00A5EC;
+}
+
+/* ===== ICON ===== */
+.skill-icon {
+  height: 52px;
+  width: 52px;
+  min-width: 52px;
+
+  border-radius: 50%;
+  background: #e5f5ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #00A5EC;
+  font-size: 1.6rem;
+}
+
+/* ===== TEXT ===== */
+.skill-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+/* ===== GRID FIX (IMPORTANT) ===== */
+/* Remove extra spacing issue */
+.row.g-4 {
+  margin-top: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .skills-section {
+    padding: 60px 0;
+  }
+
+  .skills-title {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-card {
+    padding: 16px;
+  }
+
+  .skill-icon {
+    height: 45px;
+    width: 45px;
+    min-width: 45px;
+    font-size: 1.3rem;
+  }
+
+  .skill-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-title {
+    font-size: 1.5rem;
+  }
+}

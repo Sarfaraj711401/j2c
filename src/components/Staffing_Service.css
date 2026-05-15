@@ -1,0 +1,110 @@
+/* SECTION */
+.services-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+/* CONTAINER (if not using bootstrap container) */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* HEADING */
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    color: #6b7280;
+}
+
+/* CARD */
+.service-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 32px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #111827;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* ICON BOX */
+.icon-box {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* COLORS */
+.icon-box.blue {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.icon-box.orange {
+    background: #fff7ed;
+    color: #ea580c;
+}
+
+.icon-box.purple {
+    background: #f5f3ff;
+    color: #7c3aed;
+}
+
+/* LINK */
+.service-link {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2563eb;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.service-link:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .section-title {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .section-subtitle {
+        text-align: center;
+    }
+}

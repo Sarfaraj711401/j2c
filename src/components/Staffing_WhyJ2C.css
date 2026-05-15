@@ -1,0 +1,150 @@
+/* ================= SECTION ================= */
+.j2c-compare-section {
+  background: #ffffff;
+  padding: clamp(40px, 6vw, 100px) 20px;
+  border-top: 1px solid #f1f5f9;
+}
+
+/* ================= CONTAINER ================= */
+.j2c-compare-container {
+  max-width: 1100px; /* bigger for large screens */
+  margin: auto;
+}
+
+/* ================= HEADER ================= */
+.j2c-compare-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.j2c-compare-header h2 {
+  font-size: clamp(20px, 3vw, 32px); /* responsive text */
+  font-weight: 700;
+  color: #111827;
+}
+
+/* ================= TABLE WRAPPER ================= */
+.j2c-table-wrapper {
+  overflow-x: auto;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+
+  /* smooth scroll on mobile */
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+/* ================= TABLE ================= */
+.j2c-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px; /* ensures scroll instead of break */
+}
+
+/* HEADER */
+.j2c-table thead tr {
+  background: #f9fafb;
+}
+
+.j2c-table th {
+  padding: clamp(12px, 2vw, 20px);
+  text-align: left;
+  font-size: clamp(11px, 1.2vw, 14px);
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+/* BODY */
+.j2c-table td {
+  padding: clamp(12px, 2vw, 20px);
+  font-size: clamp(12px, 1.3vw, 15px);
+  color: #374151;
+}
+
+/* ROW BORDER */
+.j2c-table tr {
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* HIGHLIGHT COLUMN */
+.highlight {
+  background: #eff6ff;
+  text-align: center;
+  font-weight: 700;
+  color: #2563eb;
+  border-left: 1px solid #dbeafe;
+  border-right: 1px solid #dbeafe;
+}
+
+/* HOVER */
+.j2c-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* ================= MOBILE NOTE ================= */
+.mobile-note {
+  text-align: center;
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 10px;
+  display: none;
+}
+
+/* ================= SCROLLBAR (OPTIONAL NICE UI) ================= */
+.j2c-table-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+.j2c-table-wrapper::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .j2c-compare-container {
+    max-width: 100%;
+  }
+
+  .mobile-note {
+    display: block;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .j2c-compare-section {
+    padding: 40px 10px;
+  }
+
+  .j2c-table {
+    min-width: 600px; /* keep scroll behavior */
+  }
+
+  .mobile-note {
+    font-size: 11px;
+  }
+}
+
+/* Large Screens (Laptop / Desktop) */
+@media (min-width: 1200px) {
+  .j2c-compare-container {
+    max-width: 1200px;
+  }
+}
+
+/* Extra Large Screens (4K) */
+@media (min-width: 1600px) {
+  .j2c-compare-container {
+    max-width: 1400px;
+  }
+
+  .j2c-table td,
+  .j2c-table th {
+    padding: 22px;
+    font-size: 16px;
+  }
+}

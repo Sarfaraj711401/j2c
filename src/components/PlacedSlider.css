@@ -1,0 +1,72 @@
+.placed-slider-section {
+  width: 100%;
+  background: #eef6ff;
+  padding: 70px 0;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.placed-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 45px;
+  color: #0c1a31;
+}
+
+.placed-slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.placed-slider {
+  display: flex;
+  gap: 26px;
+  width: max-content;
+  animation: infiniteScroll 25s linear infinite;
+}
+
+.placed-card {
+  width: 220px;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 20px;
+  text-align: center;
+  flex-shrink: 0;
+  border: 1px solid #e3e8ff;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
+}
+
+.placed-img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 12px;
+}
+
+.placed-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #0c1a31;
+}
+
+.company-logo {
+  width: 90px;
+  opacity: 0.95;
+}
+
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 900px) {
+  .placed-card {
+    width: 180px;
+  }
+}

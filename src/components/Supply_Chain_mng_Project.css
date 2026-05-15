@@ -1,0 +1,99 @@
+/* Scoped container to avoid global conflicts */
+.projects-section-custom {
+    width: 100%;
+    background: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container */
+.projects-container-custom {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+/* Heading */
+.projects-section-custom h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+}
+
+.sub-heading {
+    font-size: 18px;
+    color: #6e6e6e;
+    margin-bottom: 40px;
+}
+
+/* Card */
+.project-card-custom {
+    width: 380px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #e0e0e0;
+    transition: 0.3s;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 320px;
+}
+
+/* Active card */
+.active-card {
+    background: #fff4cb;
+    border-color: #e9c16e;
+}
+
+/* Header */
+.project-header {
+    margin-bottom: 10px;
+}
+
+/* Title */
+.project-card-custom h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+/* Text */
+.project-card-custom p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Disclaimer */
+.disclaimer-custom {
+    width: 85%;
+    margin: 25px auto 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Dots */
+.slider-dots-custom {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background: #007bff;
+}

@@ -1,0 +1,85 @@
+/* SECTION */
+.pp-join-best-section {
+    width: 100%;
+    padding: 70px 20px;
+    background: #ffffff;
+}
+
+/* CARD */
+.pp-join-best-card {
+    max-width: 1150px;
+    margin: auto;
+    background: #2563eb;
+    border-radius: 26px;
+    padding: 60px 30px;
+    text-align: center;
+    color: #fff;
+}
+
+/* TITLE */
+.pp-join-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* SUBTITLE */
+.pp-join-subtitle {
+    font-size: 18px;
+    opacity: 0.95;
+    margin-bottom: 40px;
+}
+
+/* IMAGE BOX */
+.pp-join-image-box {
+    max-width: 720px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+.pp-join-image {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    display: block;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .pp-join-best-card {
+        padding: 40px 20px;
+    }
+
+    .pp-join-title {
+        font-size: 28px;
+    }
+
+    .pp-join-subtitle {
+        font-size: 16px;
+    }
+
+    .pp-join-image-box {
+        padding: 15px;
+    }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+    .pp-join-best-section {
+        padding: 50px 15px;
+    }
+
+    .pp-join-title {
+        font-size: 24px;
+    }
+
+    .pp-join-subtitle {
+        font-size: 15px;
+    }
+}

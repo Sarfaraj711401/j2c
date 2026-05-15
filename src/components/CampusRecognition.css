@@ -1,0 +1,159 @@
+/* ===== ROOT ===== */
+.campus-recognition {
+  background: #ffffff;
+  padding: 60px 20px;
+}
+
+/* CONTAINER */
+.campus-recognition__container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* TITLE */
+.campus-recognition__title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #111827;
+}
+
+/* GRID */
+.campus-recognition__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+/* ===== LEFT CARD ===== */
+.campus-recognition__card {
+  background: #ffffff;
+  border: 1px solid #f1f1f1;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.campus-recognition__card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+/* LIST */
+.campus-recognition__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ITEM */
+.campus-recognition__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+/* COLORS */
+.campus-recognition__item.gold {
+  background: #fef9c3;
+}
+
+.campus-recognition__item.silver {
+  background: #f3f4f6;
+}
+
+.campus-recognition__item.bronze {
+  background: #ffedd5;
+}
+
+/* USER */
+.campus-recognition__user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.campus-recognition__user img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* RANK */
+.rank {
+  font-weight: 700;
+}
+
+/* POINTS */
+.points {
+  font-weight: 700;
+}
+
+/* ===== TESTIMONIAL ===== */
+.campus-recognition__testimonial {
+  background: #2563eb;
+  color: white;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.campus-recognition__quote {
+  font-size: 16px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* AUTHOR */
+.campus-recognition__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.campus-recognition__author img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.role {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (min-width: 768px) {
+  .campus-recognition__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .campus-recognition__title {
+    font-size: 32px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .campus-recognition {
+    padding: 80px 20px;
+  }
+}

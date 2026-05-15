@@ -1,0 +1,32 @@
+.overview-wrapper {
+    max-width: 950px;
+}
+
+.overview-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #222;
+}
+
+.overview-subtitle {
+    font-weight: 700;
+    font-size: 26px;
+    color: #222;
+}
+
+.overview-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 14px;
+}
+
+.overview-link {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.overview-link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,117 @@
+/* TITLE */
+.pp-section-title {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+.pp-section-title h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+}
+
+.pp-section-title h2 span {
+    color: #2563eb;
+}
+
+.pp-section-title p {
+    margin-top: 10px;
+    color: #64748b;
+}
+
+/* GRID */
+.pp-partner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 30px 50px 70px;
+    background: #f8fafc;
+}
+
+/* CARD */
+.pp-partner-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* HOVER */
+.pp-partner-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* TAG */
+.pp-partner-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #e0e7ff;
+    color: #1e40af;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+/* LOGO */
+.pp-partner-logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: #2563eb;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+/* TEXT */
+.pp-partner-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.pp-partner-card p {
+    margin-top: 8px;
+    color: #64748b;
+}
+
+/* HIGHLIGHT */
+.pp-highlight {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+    .pp-partner-grid {
+        padding: 25px 30px 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pp-partner-grid {
+        padding: 20px 20px 50px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pp-section-title {
+        padding: 40px 15px 10px;
+    }
+
+    .pp-partner-grid {
+        padding: 15px 15px 40px;
+    }
+
+    .pp-partner-card {
+        padding: 22px;
+    }
+}

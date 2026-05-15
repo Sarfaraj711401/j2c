@@ -1,0 +1,96 @@
+/* ===== Topbar ===== */
+.fem-topbar {
+    background-color: #00A5EC;
+    color: #fff;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    z-index: 1050;
+}
+
+.fem-contact-info i,
+.fem-social-icons i {
+    margin-right: 5px;
+}
+
+.fem-contact-info a {
+    color: #dbeeff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.fem-social-icons a {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.fem-social-icons a:hover {
+    color: #dbeeff;
+}
+
+/* ===== Navbar ===== */
+.fem-navbar {
+    background-color: #fff;
+    border-bottom: 2px solid #00A5EC;
+    padding: 0.7rem 2rem;
+    top: 30px;
+    transition: all 0.3s ease;
+    z-index: 1040;
+}
+
+.fem-navbar .navbar-brand img {
+    height: 60px;
+    width: auto;
+}
+
+.fem-navbar .nav-link {
+    color: #000 !important;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.fem-navbar .nav-link:hover,
+.fem-navbar .dropdown-item:hover {
+    color: #00A5EC !important;
+}
+
+/* Buttons */
+.fem-navbar .btn-outline-primary {
+    border-color: #00A5EC;
+    color: #00A5EC;
+    font-weight: 500;
+}
+
+.fem-navbar .btn-outline-primary:hover {
+    background-color: #00A5EC;
+    color: #fff;
+}
+
+.fem-navbar .btn-primary {
+    background-color: #00A5EC;
+    border: none;
+}
+
+.fem-navbar .btn-primary:hover {
+    background-color: #0088c9;
+}
+
+/* Shrink */
+.fem-navbar.fem-shrink {
+    padding: 0.3rem 2rem;
+}
+
+/* ===== FIX: Hover Dropdown (Desktop Only) ===== */
+@media (min-width: 992px) {
+    .fem-navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+/* Prevent overlapping */
+body {
+    padding-top: 100px;
+}
+
+

@@ -1,0 +1,164 @@
+/* ================= EMPLOYER PROFILE SECTION ================= */
+
+.EmployerProfile-section{
+  background:#ffffff;
+  padding:80px 18px 70px;
+}
+
+.EmployerProfile-container{
+  max-width:1200px;
+  margin:auto;
+  text-align:center;
+}
+
+.EmployerProfile-title{
+  font-size:32px;
+  font-weight:900;
+  color:#0f172a;
+  margin-bottom:48px;
+}
+
+/* cards */
+.EmployerProfile-cards{
+  display:flex;
+  gap:24px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+/* card */
+.EmployerProfile-card{
+  background:#ffffff;
+  width:260px;
+  padding:24px 22px;
+  border-radius:16px;
+  text-align:left;
+  box-shadow:0 10px 30px rgba(15,23,42,.08);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  cursor:pointer;
+  transition:all .25s ease;
+}
+
+.EmployerProfile-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 40px rgba(15,23,42,.14);
+}
+
+/* content */
+.EmployerProfile-info h4{
+  font-size:18px;
+  font-weight:800;
+  margin-bottom:6px;
+  color:#0f172a;
+}
+
+.EmployerProfile-info p{
+  font-size:14px;
+  color:#475569;
+  margin:0;
+}
+
+/* arrow */
+.EmployerProfile-arrow{
+  font-size:22px;
+  color:#94a3b8;
+}
+
+/* dots */
+.EmployerProfile-dots{
+  margin-top:40px;
+  display:flex;
+  justify-content:center;
+  gap:12px;
+}
+
+.EmployerProfile-dots span{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#d1d5db;
+}
+
+.EmployerProfile-dots .active{
+  width:28px;
+  border-radius:999px;
+  background:#2563eb;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 1024px){
+  .EmployerProfile-title{
+    font-size:28px;
+  }
+
+  .EmployerProfile-card{
+    width:220px;
+    padding:20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+  .EmployerProfile-section{
+    padding:60px 14px;
+  }
+
+  .EmployerProfile-title{
+    font-size:24px;
+    margin-bottom:30px;
+  }
+
+  .EmployerProfile-cards{
+    gap:16px;
+  }
+
+  .EmployerProfile-card{
+    width:100%;
+    max-width:400px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+
+  .EmployerProfile-title{
+    font-size:20px;
+  }
+
+  .EmployerProfile-card{
+    padding:18px;
+  }
+
+  .EmployerProfile-info h4{
+    font-size:16px;
+  }
+
+  .EmployerProfile-info p{
+    font-size:13px;
+  }
+
+  .EmployerProfile-arrow{
+    font-size:18px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1400px){
+
+  .EmployerProfile-container{
+    max-width:1300px;
+  }
+
+  .EmployerProfile-title{
+    font-size:36px;
+  }
+
+  .EmployerProfile-card{
+    width:280px;
+  }
+}

@@ -1,0 +1,93 @@
+/* SECTION */
+.internship-timeline {
+    padding: 100px 15px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* TITLE */
+.internship-timeline-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* CONTAINER */
+.internship-timeline-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ITEM CARD */
+.internship-timeline-item {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+/* STEP ROW */
+.internship-timeline-step {
+    display: flex;
+    align-items: center;
+}
+
+/* NUMBER */
+.internship-timeline-number {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00A5EC, #0088c9);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 15px rgba(0,165,236,0.4);
+    flex-shrink: 0;
+}
+
+/* TEXT */
+.internship-timeline-text {
+    margin-left: 20px;
+}
+
+.internship-timeline-text h4 {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.internship-timeline-text p {
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* IMAGE */
+.internship-timeline-item img {
+    border-radius: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .internship-timeline {
+        padding: 70px 10px;
+    }
+
+    .internship-timeline-title {
+        font-size: 2rem;
+    }
+
+    .internship-timeline-step {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .internship-timeline-text {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

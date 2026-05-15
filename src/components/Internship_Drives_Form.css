@@ -1,0 +1,142 @@
+/* ===== SECTION ===== */
+.cta-section {
+    padding: 100px 15px;
+    background: linear-gradient(135deg, #00A5EC, #0088c9);
+}
+
+/* ===== CARD ===== */
+.cta-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== LEFT PANEL ===== */
+.cta-left-panel {
+    background: linear-gradient(135deg, #ffffff, #f6fbff);
+    border-radius: 20px 0 0 20px;
+}
+
+/* ===== FORM ELEMENTS ===== */
+.form-control,
+.form-select {
+    border-radius: 12px;
+    padding: 12px 14px;
+    border: 1.8px solid #e1e5e9;
+    font-size: 14px;
+    transition: 0.25s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #00A5EC;
+    box-shadow: 0 0 0 0.2rem rgba(0, 165, 236, 0.15);
+}
+
+/* ===== LABEL ===== */
+.form-label {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+/* ===== ERROR ===== */
+.is-invalid {
+    border-color: #dc3545 !important;
+}
+
+.text-danger {
+    font-size: 12px;
+}
+
+/* ===== DOMAIN BOX ===== */
+.checkbox-group {
+    background: #f8f9fa;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.form-check {
+    margin-bottom: 10px;
+}
+
+/* ===== BUTTON ===== */
+.btn-gradient {
+    background: linear-gradient(135deg, #00A5EC, #0088c9);
+    color: #ffffff;
+    border-radius: 40px;
+    padding: 14px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #0092d1, #0077b5);
+}
+
+/* ===== DISABLED BUTTON ===== */
+.btn-gradient:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ===== PRIVACY BOX ===== */
+.privacy-note {
+    background: #fff3cd;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+/* ===== ICON FIX ===== */
+.fa-graduation-cap {
+    color: #00A5EC;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .cta-card {
+        padding: 40px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-section {
+        padding: 60px 10px;
+    }
+
+    .cta-card {
+        padding: 30px 20px;
+    }
+
+    .cta-left-panel {
+        display: none; /* hide left panel on mobile */
+    }
+
+    .btn-gradient {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-card {
+        padding: 25px 15px;
+    }
+
+    .form-control,
+    .form-select {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    .form-label {
+        font-size: 13px;
+    }
+}

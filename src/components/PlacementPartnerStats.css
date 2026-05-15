@@ -1,0 +1,65 @@
+/* SECTION */
+.placement_partner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 60px 40px; /* slightly reduced */
+    background: #ffffff;
+}
+
+/* CARD */
+.placement_partner-card {
+    background: #f1f5f9;
+    border-radius: 18px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.placement_partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+/* NUMBER */
+.placement_partner-card h2 {
+    font-size: clamp(2rem, 5vw, 2.6rem);
+    color: #2563eb;
+    font-weight: 700;
+}
+
+/* TEXT */
+.placement_partner-card p {
+    margin-top: 10px;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .placement_partner {
+        padding: 50px 25px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .placement_partner {
+        padding: 40px 20px;
+        gap: 20px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .placement_partner {
+        padding: 30px 15px;
+    }
+
+    .placement_partner-card {
+        padding: 25px 15px;
+    }
+}
